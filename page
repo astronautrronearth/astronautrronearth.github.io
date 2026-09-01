@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Academic personal profile with education, research interests, and professional background."
+    />
+    <title>Jingrui Tian | Academic Profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="page-wrap">
+      <header class="site-header">
+        <div class="profile-row">
+          <div class="portrait-card" aria-label="Profile portrait">
+            <div class="portrait-frame">
+              <img class="portrait-photo" src="./portrait.jpg" alt="Jingrui Tian portrait" />
+            </div>
+          </div>
+
+          <div class="identity-block">
+            <p class="eyebrow"></p>
+            <h1>Jingrui Tian</h1>
+            <p class="title-line">
+              Researcher / Graduate Student
+            </p>
+            <p class="affiliation-line">
+              School of Information Studies<br />
+              McGill University
+            </p>
+
+            <div class="header-contact" aria-label="Contact links">
+              <a href="mailto:jingrui.tian@mail.mcgill.ca">jingrui.tian@mail.mcgill.ca</a>
+              <a href="https://scholar.google.com/citations?user=PcKbhBIAAAAJ&hl=en" target="_blank" rel="noreferrer" class="scholar-link">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" aria-label="Google Scholar icon">
+                    <path d="M12 3.5c-2.7 0-5 1.1-6.7 2.8C4.6 7.9 4 9.1 4 10.5c0 1.4.6 2.6 1.3 3.4.8.9 1.9 1.5 3.2 1.9v2.3c0 .7.6 1.3 1.3 1.3h4.4c.7 0 1.3-.6 1.3-1.3v-2.3c1.3-.4 2.4-1 3.2-1.9.7-.8 1.3-2 1.3-3.4 0-1.4-.6-2.6-1.3-3.4C17 4.6 14.7 3.5 12 3.5Zm0 1.6c2 0 3.9.8 5.2 2.2.7.7 1.2 1.5 1.2 2.2 0 .8-.5 1.6-1.2 2.2-1.3 1.4-3.2 2.2-5.2 2.2-2 0-3.9-.8-5.2-2.2-.7-.6-1.2-1.4-1.2-2.2 0-.7.5-1.5 1.2-2.2 1.3-1.4 3.2-2.2 5.2-2.2Zm-2.5 10.2h5v1.4h-5v-1.4Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                Google Scholar
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#publication">Publication</a>
+          <a href="#experience">Experience</a>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <section id="about" class="content-section intro-block">
+          <div class="section-label">About Me</div>
+          <div class="static-tag-row" aria-label="Research keywords">
+            <span class="static-tag location">Brisbane</span>
+            <span class="static-tag location">Los Angeles</span>
+            <span class="static-tag location">Tokyo</span>
+            <span class="static-tag location">Montreal</span>
+            <span class="static-tag ai">Retrieval-Augmented Generation</span>
+            <span class="static-tag ai">AI Agents</span>
+            <span class="static-tag ai">Model Evaluation</span>
+            <span class="static-tag ai">Trustworthy AI</span>
+          </div>
+
+          <div class="intro-grid intro-grid-flat">
+            <div class="intro-copy intro-copy-wide">
+              <p>
+                I’m Rui, a graduate student in Information Studies at McGill
+                University. My academic background spans commerce, finance, and
+                public policy, with a growing focus on information systems and
+                artificial intelligence.
+              </p>
+              <p>
+                I completed my BA (Honours) in Commerce at the University of
+                Queensland, where my research focused on corporate disclosure,
+                capital markets, and information efficiency. I later earned a
+                Master of Public Policy from UCLA Luskin School and studied at the University of Tokyo Graduate School
+                of Public Policy(GraSPP) as an exchange student.
+              </p>
+            </div>
+          </div>
+
+          
+
+          <p class="gratitude-line">
+            I am deeply grateful to the professors who have supported me unconditionally throughout this journey. I am especially thankful to <strong>Prof. Xin Yu</strong> at UQ, whose mentorship guided me through my first thesis and first sparked my interest in research, and to <strong>Prof. Hitoshi Shigeoka</strong> at the University of Tokyo for his invaluable guidance and support.
+          </p>
+        </section>
+
+        <section id="publication" class="content-section">
+          <div class="section-label">Publication</div>
+          <ul class="research-inline-list">
+            <li><span class="research-meta">EACL 2026</span> <span class="status-tag">under review</span> <strong>Quantize What the Decoder Consumes: Task-Induced Measures for Low-Bit ASR</strong> — task-aware decoder-side calibration for low-bit ASR quantization.</li>
+            <li><span class="research-meta">FinLLM @ IJCAI 2026</span> <span class="status-tag best-paper-tag">best paper</span> <strong>FinSAgent</strong> — corpus-aligned multi-agent RAG for evidence-grounded SEC filing QA. <a href="https://arxiv.org/abs/2607.18102?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a></li>
+            <li><span class="research-meta">EMNLP 2026</span> <strong>SafeRx-Agent</strong> — knowledge-grounded multi-agent framework for safe and explainable medication recommendation. <a href="https://arxiv.org/abs/2605.29146?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a></li>
+            <li><span class="research-meta">PAKDD 2026</span> <strong>R²R</strong> — route-to-rerank post-training for multi-domain decoder-only rerankers. <a href="https://arxiv.org/abs/2511.19987?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a></li>
+            <li><span class="research-meta">The Web Conf. 2026</span> <strong>VeritasFi</strong> — adaptable multi-tier financial RAG for multimodal QA. <a href="https://arxiv.org/abs/2510.10828?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a></li>
+            <li><span class="research-meta">CIKM 2025</span> <strong>FinSage</strong> — multi-aspect RAG system for financial filings QA. <a href="https://arxiv.org/abs/2504.14493?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a></li>
+            <li><span class="research-meta">EMNLP 2025</span> <strong>STRICT</strong> — stress test of rendering images containing text; multilingual text rendering benchmark. <a href="https://arxiv.org/abs/2505.18985?utm_source=chatgpt.com" target="_blank" rel="noreferrer">arXiv</a> · <a href="https://github.com/tianyu-z/STRICT-Bench?utm_source=chatgpt.com" target="_blank" rel="noreferrer">Code</a></li>
+          </ul>
+        </section>
+
+        <section id="experience" class="content-section">
+          <div class="section-label">Research &amp; Experience</div>
+          <div class="experience-two-col">
+            <div class="experience-panel ai-panel">
+              <div class="experience-line">
+                <span class="experience-year">2025–Present</span>
+                <strong>AI Systems &amp; Information Retrieval</strong>
+              </div>
+              <span class="experience-description">Research on LLM agents, RAG, reranking, model evaluation, and low-bit quantization, including financial filing QA, medication recommendation, and speech recognition.</span>
+            </div>
+
+            <div class="experience-panel">
+              <ul class="research-inline-list experience-inline-list">
+                <li>
+                  <div class="experience-line">
+                    <span class="experience-year">2024–2025</span>
+                    <strong>Sustainable Finance, Policy &amp; Geoeconomics</strong>
+                  </div>
+                  <span class="experience-description">Studied the transition to electric heavy-duty trucking in the U.S., focusing on charging infrastructure, workforce readiness, labor retraining, and policy design for an equitable energy transition.</span>
+                </li>
+                <li>
+                  <div class="experience-line">
+                    <span class="experience-year">2024–2025</span>
+                    <strong>Sovereign Risk &amp; Macroeconomic Policy</strong>
+                  </div>
+                  <span class="experience-description">Examined sovereign default risk in the Maldives, with a focus on fiscal consolidation, foreign reserve management, infrastructure spending, and export diversification through tourism and fisheries.</span>
+                </li>
+                <li>
+                  <div class="experience-line">
+                    <span class="experience-year">2024–2025</span>
+                    <strong>Global Strategy &amp; Supply Chains</strong>
+                  </div>
+                  <span class="experience-description">Analyzed how U.S.–China geopolitical fragmentation could reshape manufacturing, rare-earth sourcing, market entry, divestment, and R&amp;D strategy for a Japanese home-appliance company.</span>
+                </li>
+                <li>
+                  <div class="experience-line">
+                    <span class="experience-year">2024–2025</span>
+                    <strong>Financial Inclusion &amp; Social Impact</strong>
+                  </div>
+                  <span class="experience-description">Studied how an empathy-driven Japanese crowdfunding model could be adapted to Peru, focusing on MSME financing, crowdfunding regulation, financial inclusion, and platform strategy.</span>
+                </li>
+                <li>
+                  <div class="experience-line">
+                    <span class="experience-year">2022–2023</span>
+                    <strong>Corporate Disclosure &amp; Capital Markets</strong>
+                  </div>
+                  <span class="experience-description">Examined whether CSR disclosure improves firm-specific information flow in Chinese A-share firms, focusing on stock price crash risk, synchronicity, and differences between state-owned and non-state-owned companies.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Jingrui Tian</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
